@@ -6,6 +6,10 @@ import numpy as np
 from PIL import Image
 from data import ROOT, normalize_text, image_hash, check_split_leakage
 
+def popcount(value):
+    # int.bit_count is unavailable in the system Python 3.9.
+    return bin(value).count('1')
+
 def dhash(path):
     with Image.open(path) as im:
         pixels=np.asarray(im.convert('L').resize((9,8),Image.Resampling.LANCZOS))
@@ -33,10 +37,10 @@ def prepare(out, verified_only=False):
                 counts['exact_duplicate']+=1; continue
             h=dhash(path); candidate_ids=set()
             for chunk in range(4): candidate_ids.update(buckets[(chunk,(h>>(16*chunk))&65535)])
-            duplicate=next((i for i in sorted(candidate_ids) if (h ^ hashes[i]).bit_count()<=3),None)
+            duplicate=next((i for i in sorted(candidate_ids) if popcount(h ^ hashes[i])<=3),None)
             if duplicate is not None:
                 counts['perceptual_candidate_removed']+=1
-                if len(examples)<20: examples.append({'removed':str(path.relative_to(ROOT)),'retained':retained[duplicate]['image'],'retained_split':retained[duplicate]['split'],'distance':(h^hashes[duplicate]).bit_count()})
+                if len(examples)<20: examples.append({'removed':str(path.relative_to(ROOT)),'retained':retained[duplicate]['image'],'retained_split':retained[duplicate]['split'],'distance':popcount(h^hashes[duplicate])})
                 continue
             record={'id':f'{split}:{path.name}','text':row['text'],'image':str(path.relative_to(ROOT)),'image_sha256':digest,'label':int(row['6_way_label']),'source_url':row['original_url']}
             if verified_only:

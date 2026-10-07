@@ -1,13 +1,13 @@
 {
   "project": "mm01-content-classification",
-  "status": "pytorch_two_phase_rerun_in_progress",
+  "status": "pytorch_two_phase_rerun_verified",
   "seed": 42,
   "local_device": "auto",
-  "model_backend": "frozen_clip_pytorch_heads",
+  "model_backend": "frozen_features_pytorch_softmax_lbfgs",
   "remote_training": "unconfigured",
   "data_root": "data",
   "run_root": "runs",
-  "current_run": null,
+  "current_run": "runs/pytorch-phase2-verified",
   "fewshot_seeds": [
     11,
     22,

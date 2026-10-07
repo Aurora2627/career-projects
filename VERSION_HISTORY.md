@@ -13,4 +13,4 @@
 
 VS Code 设置包含本机绝对路径，未提交本机设置；可运行 scripts/configure_vscode.py 重新生成。所有模型运行仍从 VS Code 启动。
 
-当前提交恢复快照：pytorch-phase2-verified；上层项目规划与报告目录来自恢复时整理，不代表当时状态。
+当前提交恢复快照：system-python-phase1-clip；上层项目规划与报告目录来自恢复时整理，不代表当时状态。
