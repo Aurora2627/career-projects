@@ -1,0 +1,19 @@
+{
+  "python_syntax": "passed",
+  "active_training_imports": "PyTorch; no sklearn/joblib",
+  "immutable_source_snapshot_hashes": "passed",
+  "old_artifact_removal": "passed",
+  "unit_tests": 11,
+  "inference_checks": {
+    "pytorch-phase1-resnet": {
+      "sample_id": "test:26f988501efb9bfaaa2d5b495e776ad3.jpg",
+      "prediction": 0,
+      "raw_image_inference": "matches saved test prediction within 1e-5"
+    },
+    "pytorch-phase2-verified": {
+      "sample_id": "test:b8e28920e02b826a973a0383683cad14.jpg",
+      "prediction": 2,
+      "raw_image_inference": "matches saved test prediction within 1e-5"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "official_repository": "https://github.com/entitize/Fakeddit",
+  "official_folder": "https://drive.google.com/drive/folders/1DuH0YaEox08ZwzZDpRMOaFpMCeRyxiEF",
+  "files": {
+    "train": {
+      "file_id": "1XsOkD3yhxgWu8URMes0S9LVSwuFJ4pT6",
+      "bytes": 155656851,
+      "sha256": "9894cb4aa2f901c6f29b61ac3d95ce9f7e78c43be8062ae5deb1c219c82497bb"
+    },
+    "val": {
+      "file_id": "1Z99QrwpthioZQY2U6HElmnx8jazf7-Kv",
+      "bytes": 16343460,
+      "sha256": "c70140ec376e083e3780b5b488c96c8933678ca5800139bfb78c92e95df6946e"
+    },
+    "test": {
+      "file_id": "1p9EewIKVcFbipVRLZNGYc2JbSC7A0SWv",
+      "bytes": 16402086,
+      "sha256": "bc92378e070ca7b1a7497053d1c34cdc3f550be6232a76791a2c722d6d9bbf94"
+    }
+  }
+}

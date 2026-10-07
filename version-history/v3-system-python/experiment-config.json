@@ -1,0 +1,21 @@
+{
+  "backend": "clip",
+  "data": "data/processed/phase1",
+  "output": "runs/system-python-phase1-clip",
+  "fewshot": false,
+  "framework": "Python/PyTorch",
+  "device": "cpu",
+  "classifier": "torch.nn.Linear(6-way softmax)",
+  "objective": "class-balanced weighted mean cross-entropy + L2(weight)/(2*C*N); no bias penalty",
+  "optimizer": "torch.optim.LBFGS (strong_wolfe)",
+  "C_candidates": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "selection": "validation macro-F1 only, first C wins ties",
+  "fewshot_seeds": [],
+  "encoder_training": "frozen pretrained encoders",
+  "text_svd": "train-only exact torch.linalg.svd; differs from old randomized SVD",
+  "scope": "exploratory community subset; reused held-out data, not new blind benchmark"
+}

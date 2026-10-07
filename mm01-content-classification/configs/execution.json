@@ -1,0 +1,33 @@
+{
+  "project": "mm01-content-classification",
+  "status": "pytorch_two_phase_rerun_in_progress",
+  "seed": 42,
+  "local_device": "auto",
+  "model_backend": "frozen_clip_pytorch_heads",
+  "remote_training": "unconfigured",
+  "data_root": "data",
+  "run_root": "runs",
+  "current_run": null,
+  "fewshot_seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "fewshot_per_class": [
+    2,
+    4
+  ],
+  "dhash_distance": 3,
+  "require_unique_official_match": true,
+  "future_training_framework": "Python/PyTorch",
+  "source_snapshot_required": true,
+  "pytorch_entrypoint": "scripts/train_torch.py",
+  "current_runs": [
+    "runs/pytorch-phase1-resnet",
+    "runs/pytorch-phase1-clip",
+    "runs/pytorch-phase2-exploratory",
+    "runs/pytorch-phase2-verified"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "method": "normalized clean_title AND exact image_url; unique official candidate required",
+  "community_rows": 8646,
+  "status_counts": {
+    "verified": 8562,
+    "ambiguous": 84
+  },
+  "by_community_split": {
+    "train": {
+      "verified": 4758,
+      "ambiguous": 42
+    },
+    "val": {
+      "verified": 2379,
+      "ambiguous": 26
+    },
+    "test": {
+      "verified": 1425,
+      "ambiguous": 16
+    }
+  },
+  "official_files": {
+    "train": {
+      "rows": 564000,
+      "sha256": "9894cb4aa2f901c6f29b61ac3d95ce9f7e78c43be8062ae5deb1c219c82497bb"
+    },
+    "val": {
+      "rows": 59342,
+      "sha256": "c70140ec376e083e3780b5b488c96c8933678ca5800139bfb78c92e95df6946e"
+    },
+    "test": {
+      "rows": 59319,
+      "sha256": "bc92378e070ca7b1a7497053d1c34cdc3f550be6232a76791a2c722d6d9bbf94"
+    }
+  },
+  "source": "https://github.com/entitize/Fakeddit",
+  "limitation": "Metadata correspondence does not independently validate real-world truth, image bytes, or licensing."
+}

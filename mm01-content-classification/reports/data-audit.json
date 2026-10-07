@@ -1,0 +1,50 @@
+{
+  "source": "ams-99/fakeddit_9k community subset",
+  "official_split_provenance": "unverified",
+  "seed": 42,
+  "filters": {
+    "test": {
+      "exact_duplicate": 12,
+      "class_4_below_requested_cap": 4
+    },
+    "val": {
+      "exact_duplicate": 24,
+      "class_4_below_requested_cap": 5
+    },
+    "train": {
+      "exact_duplicate": 107,
+      "class_4_below_requested_cap": 8
+    }
+  },
+  "counts": {
+    "test": {
+      "2": 12,
+      "0": 12,
+      "3": 12,
+      "5": 12,
+      "1": 12,
+      "4": 4
+    },
+    "val": {
+      "5": 12,
+      "2": 12,
+      "0": 12,
+      "1": 12,
+      "3": 12,
+      "4": 5
+    },
+    "train": {
+      "0": 60,
+      "2": 60,
+      "3": 60,
+      "1": 60,
+      "5": 60,
+      "4": 8
+    }
+  },
+  "limitations": [
+    "Community subset with scarce class; split derivation and official label mapping not independently verified",
+    "Exact text and decoded-image dedup only; perceptual/semantic duplicates remain possible",
+    "Per-class capped subset with a scarce class; not balanced or representative of platform prevalence"
+  ]
+}

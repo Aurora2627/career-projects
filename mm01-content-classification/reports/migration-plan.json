@@ -1,0 +1,30 @@
+{
+  "old_run_directories": [
+    "baseline-v1",
+    "baseline-v2",
+    "clip-v1",
+    "clip-v2",
+    "phase2",
+    "phase2-incomplete",
+    "phase2-verified",
+    "torch-v1"
+  ],
+  "datasets": {
+    "phase1": {
+      "train": "21fdc45643378cd5cd59c82fa9fb5adf3d2d17751938b5f4d8fbfcb020c79d55",
+      "val": "a4f06e0187ba662ac330d0261c067788356852417f27c5071704fbf2b8ee2a76",
+      "test": "5bc72aa2a012548dcaa840b937f6c0c3a3858720fac82c02eab6bb96795be302"
+    },
+    "phase2-exploratory": {
+      "train": "44623b02e4b0befcead1bb1abddb6bbb4413ad0aebd23761d8f9578321b4c76a",
+      "val": "989fca4242cc67228038c3bbb8cadde244b1b4e8f2275c97bd5233791d951f65",
+      "test": "a47d4e1d6b5a730394e0d8f79bff885c0ae02e23df57a753a0cbf6ee813e5478"
+    },
+    "phase2-verified": {
+      "train": "d06edca8ad3563ad4e21b46c7ba94b28c573f742f217bfeb2ed3301cfb3635c9",
+      "val": "f4fdedc54d8c2f49fb14bcade80389c20e9056c80be2ae73217fef394072012f",
+      "test": "8af1efeee5e4cfb8f076b564fab7e05d6360b4513eaeb449842e3b286e827e73"
+    }
+  },
+  "cleanup_scope": "old run artifacts, old derived npz feature caches and obsolete reports; raw data, images, fixed manifests, pretrained encoders and Python source history retained"
+}

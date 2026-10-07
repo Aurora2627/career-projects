@@ -1,2 +1,31 @@
-# career-projects
-Python/PyTorch internship portfolio: multimodal classification, CV and AI Agent projects.
+# 就业项目工作区
+
+## 两份简历
+
+- 多模态/CV：mm01 图文内容分类 + mm02 文档图表问答。CNN 练习先用于基础学习；达到实质深度才写入简历。
+- Agent/后端：agent01 技术任务执行 + agent02 实验分析与故障诊断。
+
+## 目录
+
+每个项目包含 src、configs、data/sample、scripts、tests、reports、runs。shared 用于跨项目工具和数据索引；resumes 保存简历与面试讲稿；interview-practice 保存练习记录。原始数据和权重后续按需下载，不把大量模型拷贝进每个项目。
+
+## 当前完成情况
+
+四个项目目录已建立。mm01 前两阶段已全部使用 Python/PyTorch 重跑，保存 Python 源码、72 个 .pt 分类器、配置、日志与评测，并清理旧实验模型、结果与派生缓存。包括来源核验、近重复过滤、单模态/融合基线与 5 种子严格 K-shot；VLM 微调尚未实施。其余项目尚未实现。
+
+## 推荐启动顺序
+
+1. Python/PyTorch 训练基础与 CNN 小练习；同时推进 agent01 的最小版本。
+2. mm01 跑出可信基线，再完善 agent01。
+3. 在两条主线各有一个完整项目后推进 mm02 和 agent02。
+4. 外部 GPU 条件明确后，完成多模态微调和部署实验。
+
+## 协作方式
+
+助手负责代码、数据脚本、实验配置、评测、运行排错、文档和结果整理。学生负责理解核心代码、检查标注与失败样例、独立复写关键实现和面试讲解。模型调用需配置可用后端；远程训练需用户提供实际硬件和可用访问方式。
+
+## 学习与实现原则
+
+每阶段先建立基线，再实施一个明确改动并验证；模型效果未测量之前不写提升百分比。生成或模拟数据必须标记来源。训练集用于优化，验证集用于选择配置，测试集保持独立。
+
+实验实现与源代码保存遵循 [实验约定](EXPERIMENT_RULES.md)：Python/PyTorch、逐次源代码快照、配置、日志和 .pt 权重。

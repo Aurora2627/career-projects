@@ -1,0 +1,10 @@
+{
+  "project": "agent02-experiment-diagnostics",
+  "status": "planned",
+  "seed": 42,
+  "local_device": "auto",
+  "model_backend": "unconfigured",
+  "remote_training": "unconfigured",
+  "data_root": "data",
+  "run_root": "runs"
+}

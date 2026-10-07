@@ -1,0 +1,69 @@
+{
+  "runs": {
+    "pytorch-phase1-resnet": {
+      "models": 3,
+      "source_snapshot_hashes": "passed",
+      "fixed_input_hashes": "unchanged",
+      "checkpoint_reload": "all saved heads exactly match in-memory test logits",
+      "sizes": {
+        "train": 308,
+        "val": 65,
+        "test": 64
+      }
+    },
+    "pytorch-phase1-clip": {
+      "models": 3,
+      "source_snapshot_hashes": "passed",
+      "fixed_input_hashes": "unchanged",
+      "checkpoint_reload": "all saved heads exactly match in-memory test logits",
+      "sizes": {
+        "train": 308,
+        "val": 65,
+        "test": 64
+      }
+    },
+    "pytorch-phase2-exploratory": {
+      "models": 33,
+      "source_snapshot_hashes": "passed",
+      "fixed_input_hashes": "unchanged",
+      "checkpoint_reload": "all saved heads exactly match in-memory test logits",
+      "sizes": {
+        "train": 1007,
+        "val": 305,
+        "test": 304
+      }
+    },
+    "pytorch-phase2-verified": {
+      "models": 33,
+      "source_snapshot_hashes": "passed",
+      "fixed_input_hashes": "unchanged",
+      "checkpoint_reload": "all saved heads exactly match in-memory test logits",
+      "sizes": {
+        "train": 1007,
+        "val": 305,
+        "test": 304
+      }
+    }
+  },
+  "deleted_old_artifacts": [
+    "runs/baseline-v1",
+    "runs/baseline-v2",
+    "runs/clip-v1",
+    "runs/clip-v2",
+    "runs/phase2",
+    "runs/phase2-incomplete",
+    "runs/phase2-verified",
+    "runs/torch-v1",
+    "data/cache/features-0e0183b099ec192f.npz",
+    "data/cache/features-64da199a4b5f6562.npz",
+    "data/cache/phase2-clip-324b901b8b7c76e7.npz",
+    "data/cache/phase2-clip-af267278836bbb2f.npz",
+    "data/processed/phase2",
+    "reports/phase2-verification.json",
+    "reports/verification.json",
+    "reports/runtime.json"
+  ],
+  "raw_data_and_preserved_manifests_retained": true,
+  "legacy_python_only": "source_history/pre-pytorch-migration",
+  "framework": "Python/PyTorch"
+}

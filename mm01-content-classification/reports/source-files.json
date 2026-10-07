@@ -1,0 +1,18 @@
+{
+  "val.csv": {
+    "bytes": 645194,
+    "sha256": "68bbc58e3713775799f0fea925d1bcf530cbbe964e4c6f56a6fc1b47485a06dd"
+  },
+  "test.csv": {
+    "bytes": 386500,
+    "sha256": "3d359bfb69af1f6d0e6c3aedc60c886b9878fd9e6dcaa8f59fe512aaa811013f"
+  },
+  "image_cache.zip": {
+    "bytes": 496335250,
+    "sha256": "5ca5324c8424d6e6b8b461beafc6846404e36a3ce9eebd6f9bf509eb7f59e176"
+  },
+  "train.csv": {
+    "bytes": 1288311,
+    "sha256": "a423d40de37602581e7991efeeab1e329b1db10af5460afdb270c44edd7bfef4"
+  }
+}
