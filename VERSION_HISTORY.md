@@ -12,5 +12,3 @@
 最早的非 PyTorch 代码仅保存在 source_history，不伪造缺失的逐轮历史。权重、数据、缓存与本地依赖留在本机。version-history 保留公开的配置、指标和源码哈希；源代码版本通过 Git 提交恢复。
 
 VS Code 设置包含本机绝对路径，未提交本机设置；可运行 scripts/configure_vscode.py 重新生成。所有模型运行仍从 VS Code 启动。
-
-当前提交恢复快照：system-python-phase1-clip；上层项目规划与报告目录来自恢复时整理，不代表当时状态。

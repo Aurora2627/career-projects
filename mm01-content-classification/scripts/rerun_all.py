@@ -8,7 +8,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--cleanup-legacy',action='store_true');args=p.parse_args()
     plan=json.loads((ROOT/'reports/migration-plan.json').read_text())
     for name,backend,data,fewshot in RUNS:
-        command=[sys.executable,str(ROOT/'scripts/train_torch.py'),'--backend',backend,'--data',f'data/processed/{data}','--output',f'runs/{name}']
+        command=[sys.executable,str(ROOT/'scripts/train_torch.py'),'--optimizer','lbfgs','--backend',backend,'--data',f'data/processed/{data}','--output',f'runs/{name}']
         if fewshot:command.append('--fewshot')
         subprocess.run(command,check=True)
         subprocess.run([sys.executable,str(ROOT/'scripts/summarize_run.py'),f'runs/{name}'],check=True)
